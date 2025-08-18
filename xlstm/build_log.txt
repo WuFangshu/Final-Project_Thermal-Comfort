@@ -1,0 +1,41 @@
+Using C:\Users\Sherl\AppData\Local\torch_extensions\torch_extensions\Cache\py310_cu121 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file C:\Users\Sherl\AppData\Local\torch_extensions\torch_extensions\Cache\py310_cu121\slstm_HS20BS8NH4NS4DBfDRbDWbDGbDSbDAfNG4SA1GRCV0GRC0d0FCV0FC0d0\build.ninja...
+Building extension module slstm_HS20BS8NH4NS4DBfDRbDWbDGbDSbDAfNG4SA1GRCV0GRC0d0FCV0FC0d0...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+embedding_dim=19 不是4的倍数,自动调整为 20
+ninja: no work to do.
+Loading extension module slstm_HS20BS8NH4NS4DBfDRbDWbDGbDSbDAfNG4SA1GRCV0GRC0d0FCV0FC0d0...
+Traceback (most recent call last):
+  File "E:\thermal_project\xlstm\train.py", line 52, in <module>
+    model = xLSTMBlockStack(model_config).to(device)
+  File "E:\thermal_project\xlstm\xlstm\xlstm_block_stack.py", line 84, in __init__
+    self.blocks = self._create_blocks(config=config)
+  File "E:\thermal_project\xlstm\xlstm\xlstm_block_stack.py", line 105, in _create_blocks
+    blocks.append(sLSTMBlock(config=config))
+  File "E:\thermal_project\xlstm\xlstm\blocks\slstm\block.py", line 33, in __init__
+    super().__init__(
+  File "E:\thermal_project\xlstm\xlstm\blocks\xlstm_block.py", line 63, in __init__
+    self.xlstm = sLSTMLayer(config=self.config.slstm)
+  File "E:\thermal_project\xlstm\xlstm\blocks\slstm\layer.py", line 78, in __init__
+    self.slstm_cell = sLSTMCell(self.config)
+  File "E:\thermal_project\xlstm\xlstm\blocks\slstm\cell.py", line 780, in __new__
+    return sLSTMCell_cuda(config, skip_backend_init=skip_backend_init)
+  File "E:\thermal_project\xlstm\xlstm\blocks\slstm\cell.py", line 690, in __init__
+    self.func = sLSTMCellFuncGenerator(self.training, config)
+  File "E:\thermal_project\xlstm\xlstm\blocks\slstm\cell.py", line 536, in sLSTMCellFuncGenerator
+    slstm_cuda = sLSTMCellCUDA.instance(config=config)
+  File "E:\thermal_project\xlstm\xlstm\blocks\slstm\cell.py", line 515, in instance
+    cls.mod[repr(config)] = load(
+  File "E:\thermal_project\xlstm\xlstm\blocks\slstm\src\cuda_init.py", line 100, in load
+    mod = _load(name + suffix, sources, **myargs)
+  File "E:\conda_envs\xlstm_env\lib\site-packages\torch\utils\cpp_extension.py", line 1314, in load
+    return _jit_compile(
+  File "E:\conda_envs\xlstm_env\lib\site-packages\torch\utils\cpp_extension.py", line 1746, in _jit_compile
+    return _import_module_from_library(name, build_directory, is_python_module)
+  File "E:\conda_envs\xlstm_env\lib\site-packages\torch\utils\cpp_extension.py", line 2140, in _import_module_from_library
+    module = importlib.util.module_from_spec(spec)
+  File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+  File "<frozen importlib._bootstrap_external>", line 1176, in create_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+ImportError: DLL load failed while importing slstm_HS20BS8NH4NS4DBfDRbDWbDGbDSbDAfNG4SA1GRCV0GRC0d0FCV0FC0d0: 找不到指定的模块。

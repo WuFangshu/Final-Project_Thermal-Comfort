@@ -1,0 +1,6 @@
+autotherm_data/ 
+data/ 
+__pycache__/ 
+*.pyc 
+*.npy 
+*.csv 

@@ -1,0 +1,85 @@
+model_name: ollama/mistral:latest
+max_tokens: 512
+temperature: 0.7
+num_samples: 5
+batch_size: 1
+
+output_format: jsonl
+output_path: ./dataset.jsonl
+
+dataset_name: autotherm
+topic_tree:
+  root_prompt: Thermal Comfort Simulation
+  model_name: ollama/mistral:latest
+
+fields:
+  - name: file_name
+    type: string
+  - name: Timestamp
+    type: string
+  - name: Age
+    type: int
+  - name: Gender
+    type: string
+  - name: Weight
+    type: int
+  - name: Height
+    type: int
+  - name: Bodyfat
+    type: float
+  - name: Bodytemp
+    type: float
+  - name: Sport-Last-Hour
+    type: int
+  - name: Time-Since-Meal
+    type: int
+  - name: Tiredness
+    type: int
+  - name: Clothing-Level
+    type: float
+  - name: Radiation-Temp
+    type: float
+  - name: PCE-Ambient-Temp
+    type: float
+  - name: Air-Velocity
+    type: float
+  - name: Metabolic-Rate
+    type: float
+  - name: Emotion-Self
+    type: string
+  - name: Emotion-ML
+    type: string
+  - name: Nose
+    type: string
+  - name: Neck
+    type: string
+  - name: RShoulder
+    type: string
+  - name: RElbow
+    type: string
+  - name: LShoulder
+    type: string
+  - name: LElbow
+    type: string
+  - name: REye
+    type: string
+  - name: LEye
+    type: string
+  - name: REar
+    type: string
+  - name: LEar
+    type: string
+  - name: Wrist_Skin_Temperature
+    type: float
+  - name: Heart_Rate
+    type: int
+  - name: GSR
+    type: float
+  - name: Ambient_Temperature
+    type: float
+  - name: Ambient_Humidity
+    type: int
+  - name: Solar_Radiation
+    type: float
+  - name: Label
+    type: int
