@@ -3,52 +3,81 @@ Final Project: Thermal Comfort with Synthetic Data
 This repository contains the implementation of Fangshu Wu’s final project on synthetic data generation for thermal comfort prediction. 
 The project explores how synthetic data can support deep learning models when real-world human subject data is scarce, costly, or constrained by ethical issues.
 
-Setup
+⚙️ Setup Instructions
+1. Clone the repository
+git clone https://github.com/WuFangshu/Final-Project_Thermal-Comfort.git
 
-git clone https://github.com/WuFangshu/Final-Project_Thermal-Comfort.git,
 cd Final-Project_Thermal-Comfort
 
-Create virtual environment on Terminal:
+3. Create a conda environment
 
-conda create -n thermal-comfort python=3.9 -y,
+conda create -n thermal-comfort python=3.9 -y
+
 conda activate thermal-comfort
 
-cd LSTM,
+4. Install dependencies
+
+Navigate to the LSTM folder and install the required packages:
+
+cd LSTM
+
 pip install -r requirements.txt
 
-Download Datasets on https://huggingface.co/datasets/kopetri/AutoTherm,
-Convert to CSV files,
-Create a data folder in each folder and place the CSV files inside.
+4. Download dataset
 
-cd LSTM,
-Modify the dataset_path in train.py to the correct path.
-Rename the files aaa_training, aaa_test, and aaa_validation in the dataloader/split folder to match the names in the created data folder.
+https://huggingface.co/datasets/kopetri/AutoTherm
+
+Convert to CSV format.
+
+Create a data/ directory inside each model folder (e.g., LSTM/data/, xLSTM/data/, etc.) and place the CSV files there.
+
+🚀 Running the Models
+LSTM
+
+cd LSTM
+
+# Update dataset_path in train.py to the correct location
+
+# Rename your dataset splits to: aaa_training, aaa_test, aaa_validation
+
 python train.py
 
-cd .. ,
-cd xLSTM,
-Modify the dataset_path in train.py to the correct path.
-Rename the files aaa_training, aaa_test, and aaa_validation in the dataloader/split folder to match the names in the created data folder.
+xLSTM
+
+cd ../xLSTM
+
+# Update dataset_path in train.py to the correct location
+
+# Ensure split names match: aaa_training, aaa_test, aaa_validation
+
 python train.py
 
-cd .. ,
-cd noise,
-Modify the dataset_path in noise.py to the correct path.
+Gaussian Noise Augmentation
+
+cd ../Gaussium_Noise
+
+# Update dataset_path in noise.py
+
 python noise.py
 
-cd .. ,
-cd LLM ,
-Modify the dataset_path in llm.py to the correct path.
-Rent a model on https://aihubmix.com, enter the key into the API Key field in llm.py.
+Large Language Model (LLM)
+
+cd ../LLM
+
+# Update dataset_path in llm.py
+
+# Add your API key in llm.py under API_KEY
+
 python llm.py
 
-cd .. ,
-cd GAN ,
-Modify the dataset_path in gan.py to the correct path.
-python gan.py ,
+Note: You need to rent a Qwen3 model from AIHubMix
+.
 
-cd .. ,
-cd SNG ,
-Modify the dataset_path in sng_autotherm_from_csv.py to the correct path.
+GAN
+cd ../GAN
+
+# Update dataset_path in gan.py
+
+python gan.py
 python sng_autotherm_from_csv.py
 
