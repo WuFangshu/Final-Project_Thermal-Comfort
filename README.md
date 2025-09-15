@@ -32,6 +32,7 @@ Convert to CSV format.
 Create a data/ directory inside each model folder (e.g., LSTM/data/, xLSTM/data/, etc.) and place the CSV files there.
 
 🚀 Running the Models
+
 LSTM
 
 cd LSTM
@@ -41,6 +42,8 @@ Update dataset_path in train.py to the correct location
 Rename your dataset splits to: aaa_training, aaa_test, aaa_validation
 
 python train.py
+
+-
 
 xLSTM
 
@@ -52,6 +55,8 @@ Ensure split names match: aaa_training, aaa_test, aaa_validation
 
 python train.py
 
+-
+
 Gaussian Noise Augmentation
 
 cd ../Gaussium_Noise
@@ -59,6 +64,8 @@ cd ../Gaussium_Noise
 Update dataset_path in noise.py
 
 python noise.py
+
+-
 
 Large Language Model (LLM)
 
@@ -70,8 +77,9 @@ Add your API key in llm.py under API_KEY
 
 python llm.py
 
-Note: You need to rent a Qwen3 model from AIHubMix
-.
+Note: You need to rent a Qwen3 model from AIHubMix on https://aihubmix.com
+
+-
 
 GAN
 
