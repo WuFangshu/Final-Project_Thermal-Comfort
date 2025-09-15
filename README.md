@@ -23,7 +23,7 @@ cd LSTM
 
 pip install -r requirements.txt
 
-4. Download dataset
+5. Download dataset
 
 https://huggingface.co/datasets/kopetri/AutoTherm
 
