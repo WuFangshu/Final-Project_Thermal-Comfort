@@ -1,0 +1,8 @@
+pytorch-lightning
+pythermalcomfort
+matplotlib
+pandas
+opencv-python
+seaborn
+scikit-learn
+wandb

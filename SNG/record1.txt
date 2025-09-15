@@ -1,0 +1,12 @@
+(E:\conda_envs\sng_env) E:\thermal_project\Synthetic-Data-Generation-by-Supervised-Neural-Gas-Network>python sng_autotherm_from_csv.py
+>> Loading CSV ...
+Detected label column: Label
+>> Train SNG: class=-3 N=141152 K=64
+>> Train SNG: class=-2 N=272250 K=64
+>> Train SNG: class=-1 N=697100 K=64
+>> Train SNG: class=0 N=692362 K=64
+>> Train SNG: class=1 N=390314 K=64
+>> Train SNG: class=2 N=509488 K=64
+>> Train SNG: class=3 N=430790 K=64
+>> Saved: synthetic_from_train.csv shape=(3133456, 67)
+>> Wrote meta: synthetic_from_train_meta.json

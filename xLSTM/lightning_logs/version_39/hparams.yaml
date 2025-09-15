@@ -1,0 +1,20 @@
+augmentation: false
+batch_size: 64
+cols: '[1,2,3,4,5,6,7,8,9,10,11,12,28,29,30,31,32,33]'
+dataset: thermal_comfort
+dropout: 0.5
+forecasting: 0
+get_sequence_wise: false
+gpus: 1
+hidden: 128
+layers: 2
+learning_rate: 0.0001
+metrics:
+- accuracy
+path: AutoTherm
+preprocess: false
+scale: 7
+sequence_size: 0
+skip: 26
+weight_decay: 0
+worker: 6
