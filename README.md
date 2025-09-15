@@ -36,9 +36,9 @@ LSTM
 
 cd LSTM
 
-# Update dataset_path in train.py to the correct location
+Update dataset_path in train.py to the correct location
 
-# Rename your dataset splits to: aaa_training, aaa_test, aaa_validation
+Rename your dataset splits to: aaa_training, aaa_test, aaa_validation
 
 python train.py
 
@@ -46,9 +46,9 @@ xLSTM
 
 cd ../xLSTM
 
-# Update dataset_path in train.py to the correct location
+Update dataset_path in train.py to the correct location
 
-# Ensure split names match: aaa_training, aaa_test, aaa_validation
+Ensure split names match: aaa_training, aaa_test, aaa_validation
 
 python train.py
 
@@ -56,7 +56,7 @@ Gaussian Noise Augmentation
 
 cd ../Gaussium_Noise
 
-# Update dataset_path in noise.py
+Update dataset_path in noise.py
 
 python noise.py
 
@@ -64,9 +64,9 @@ Large Language Model (LLM)
 
 cd ../LLM
 
-# Update dataset_path in llm.py
+Update dataset_path in llm.py
 
-# Add your API key in llm.py under API_KEY
+Add your API key in llm.py under API_KEY
 
 python llm.py
 
@@ -74,10 +74,11 @@ Note: You need to rent a Qwen3 model from AIHubMix
 .
 
 GAN
+
 cd ../GAN
 
-# Update dataset_path in gan.py
+Update dataset_path in gan.py
 
 python gan.py
-python sng_autotherm_from_csv.py
+
 
