@@ -1,9 +1,9 @@
-## Final Project: Thermal Comfort with Synthetic Data
+# Final Project: Thermal Comfort with Synthetic Data
 
 This repository contains the implementation of Fangshu Wu’s final project on synthetic data generation for thermal comfort prediction. 
 The project explores how synthetic data can support deep learning models when real-world human subject data is scarce, costly, or constrained by ethical issues.
 
-# 📂 Repository Structure
+## 📂 Repository Structure
 
 Final-Project_Thermal-Comfort/
 ├── README.md
@@ -24,7 +24,7 @@ Final-Project_Thermal-Comfort/
 |
 └── Compare synthetic data with raw data
 
-# ⚙️ Environment Setup
+## ⚙️ Environment Setup
 
 Recommended local environment setup:
 
