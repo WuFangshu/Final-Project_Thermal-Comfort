@@ -6,22 +6,39 @@ The project explores how synthetic data can support deep learning models when re
 ## 📂 Repository Structure
 
 Final-Project_Thermal-Comfort/
+
 ├── README.md
+
 │ 
+
 ├──Download and convert
+
 |
+
 ├── Long Short Term Memory training pipeline (LSTM)
+
 │ 
+
 ├── Extended Long Short Term Memory training pipeline (xLSTM)
+
 │ 
+
 ├── Generate Synthetic data witn Gaussium_Noise
+
 │ 
+
 ├── Generate Synthetic data witn GAN
+
 │ 
+
 ├── Generate Synthetic data witn LLM
+
 │ 
+
 ├── Generate Synthetic data witn SNG
+
 |
+
 └── Compare synthetic data with raw data
 
 ## ⚙️ Environment Setup
