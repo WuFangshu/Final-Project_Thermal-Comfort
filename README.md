@@ -36,7 +36,6 @@ conda create -n thermal-comfort python=3.9 -y
 
 conda activate thermal-comfort
 
-*Each folder corresponds to the respective execution method.
-
 pip install -r requirements.txt
 
+*Each folder corresponds to the respective execution method.
