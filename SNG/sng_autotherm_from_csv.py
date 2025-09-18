@@ -12,8 +12,8 @@ from sklearn.preprocessing import StandardScaler
 warnings.filterwarnings("ignore")
 
 # ========= Path =========
-TRAIN_CSV = r"E:/thermal_project/Synthetic-Data-Generation-by-Supervised-Neural-Gas-Network/data/train-00001-of-00005.csv"
-TEST_CSV  = r"E:/thermal_project/Synthetic-Data-Generation-by-Supervised-Neural-Gas-Network/data/train-00001-of-00005.csv"
+TRAIN_CSV = r"E:/thermal_project/Synthetic-Data-Generation-by-Supervised-Neural-Gas-Network/data/train-00000-of-00005.csv"
+TEST_CSV  = r"E:/thermal_project/Synthetic-Data-Generation-by-Supervised-Neural-Gas-Network/data/test-00000-of-00001.csv"
 OUT_CSV   = "synthetic_from_train.csv"
 META_JSON = OUT_CSV.replace(".csv", "_meta.json")
 
